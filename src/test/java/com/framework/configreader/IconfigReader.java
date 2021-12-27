@@ -12,11 +12,7 @@ package com.framework.configreader;
 	public int getPageLoadTimeOut();
 	public int getImplicitWait();
 	public int getExplicitWait();
-	public String getWaitTime();
-	public String getExecutionEnv();
-	public String getReportOverwrite();
 	public String getRemoteExecutionEnvURL();
-	public int getWaitForAnswer();
 	public String getBrowser();
 	public String getBaseURI();
 	

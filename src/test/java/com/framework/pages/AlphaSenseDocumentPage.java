@@ -87,5 +87,9 @@ public class AlphaSenseDocumentPage extends PageBase {
 		js.executeScript(jsQuery);
 	}
 	
+	public void clickLastReuslt() throws InterruptedException {
+		Thread.sleep(1000);
+		lastResult.click();
+	}
 	
 }

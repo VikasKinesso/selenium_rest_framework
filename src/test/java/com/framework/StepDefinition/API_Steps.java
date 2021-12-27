@@ -28,24 +28,11 @@ public class API_Steps {
 		RestAssured.baseURI = ObjectRepo.reader.getBaseURI();
 	}
 	
-	@When("I send the API request to get a user")
-	public void i_send_the_api_request_to_list_users() {
-		response = given()
-				.header("Content-Type","application/json")
-				.get(API_Endpoints.singleUser).then().extract().response();
-	}
-	
 	@Then("I should get the response status as {int}")
 	public void i_should_get_the_response_status_as(int responseCode) {
 		Assert.assertEquals(response.getStatusCode(), responseCode);
 	}
-	
-	@When("I send the API request to get a user which does not exist")
-	public void i_send_the_api_request_to_get_non_existing_user() {
-		response = given()
-				.get(API_Endpoints.singleUserNotFound).then().extract().response();
-	}
-	
+
 	@Then("I should get  {string} as {string} in response body")
 	public void i_should_get_as_in_response_body(String key, String value) {
 		JsonPath jsonPathEvaluattor = response.jsonPath();

@@ -40,11 +40,11 @@ public class Document_Steps extends InitializeWebDriver {
 	}
 
 	@When("I click on the last found result")
-	public void i_click_on_the_last_found_result() {
+	public void i_click_on_the_last_found_result() throws InterruptedException {
 		WebDriverWait wait = new WebDriverWait(ObjectRepo.driver, ObjectRepo.reader.getExplicitWait());
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(DOCUMENT.resultsSection)));
 		DOCUMENT.scrolleResultsToBottom();
-		DOCUMENT.lastResult.click();
+		DOCUMENT.clickLastReuslt();
 	}
 
 	@Then("I should see the chosen statement is highligted in the document viewer")

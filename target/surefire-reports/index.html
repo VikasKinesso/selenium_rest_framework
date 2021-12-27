@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-failed">Surefire suite</span>
+              <span class="suite-name border-passed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Surefire_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.framework.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User is able to search document using additional keyword&quot;, &quot;Optional[Test Alpha Sense API end point...)">runScenario("User is able to search document using additional keyword", "Optional[Test Alpha Sense API end point...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,22 +104,7 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.framework.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User is able to get correct number of results in the document&quot;, &quot;Optional[Test Alpha Sense API end ...)">runScenario("User is able to get correct number of results in the document", "Optional[Test Alpha Sense API end ...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="com.framework.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search Keyword and verify highlighted statement in last answer&quot;, &quot;Optional[Test Alpha Sense Search ...)">runScenario("Search Keyword and verify highlighted statement in last answer", "Optional[Test Alpha Sense Search ...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.framework.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User gets required number of objects for each response&quot;, &quot;Optional[Test Alpha Sense API end points]...)">runScenario("User gets required number of objects for each response", "Optional[Test Alpha Sense API end points]...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.framework.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User is able to search document using additional keyword&quot;, &quot;Optional[Test Alpha Sense API end point...)">runScenario("User is able to search document using additional keyword", "Optional[Test Alpha Sense API end point...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -148,29 +119,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.framework.runner.TestRunner</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;User is able to search document using additional keyword&quot;, &quot;Optional[Test Alpha Sense API end point...)">
-                  </a> <!-- runScenario("User is able to search document using additional keyword", "Optional[Test Alpha Sense API end point...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("User is able to search document using additional keyword", "Optional[Test Alpha Sense API end points]")</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [2001] but found [200]
-	at com.framework.StepDefinition.API_Steps.i_should_get_the_response_status_as(API_Steps.java:40)
-	at ✽.I should get the response status as 2001(file:///C:/Users/udit/Desktop/workspace/selenium_rest_framework/src/test/resources/features/API_TestCase.feature:28)
-... Removed 6 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -179,40 +127,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;User is able to get correct number of results in the document&quot;, &quot;Optional[Test Alpha Sense API end ...)">
-                  </a> <!-- runScenario("User is able to get correct number of results in the document", "Optional[Test Alpha Sense API end ...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("User is able to get correct number of results in the document", "Optional[Test Alpha Sense API end points]")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="runScenario(&quot;Search Keyword and verify highlighted statement in last answer&quot;, &quot;Optional[Test Alpha Sense Search ...)">
                   </a> <!-- runScenario("Search Keyword and verify highlighted statement in last answer", "Optional[Test Alpha Sense Search ...) -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Search Keyword and verify highlighted statement in last answer", "Optional[Test Alpha Sense Search Feature]")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;User gets required number of objects for each response&quot;, &quot;Optional[Test Alpha Sense API end points]...)">
-                  </a> <!-- runScenario("User gets required number of objects for each response", "Optional[Test Alpha Sense API end points]...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("User gets required number of objects for each response", "Optional[Test Alpha Sense API end points]")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;User is able to search document using additional keyword&quot;, &quot;Optional[Test Alpha Sense API end point...)">
-                  </a> <!-- runScenario("User is able to search document using additional keyword", "Optional[Test Alpha Sense API end point...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("User is able to search document using additional keyword", "Optional[Test Alpha Sense API end points]")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -278,32 +196,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.framework.runner.TestRunner')
-data.setCell(0, 3, 8358);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'runScenario')
-data.setCell(1, 2, 'com.framework.runner.TestRunner')
-data.setCell(1, 3, 2107);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'runScenario')
-data.setCell(2, 2, 'com.framework.runner.TestRunner')
-data.setCell(2, 3, 599);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'runScenario')
-data.setCell(3, 2, 'com.framework.runner.TestRunner')
-data.setCell(3, 3, 149);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'runScenario')
-data.setCell(4, 2, 'com.framework.runner.TestRunner')
-data.setCell(4, 3, 135);
+data.setCell(0, 3, 7249);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -335,30 +237,12 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("User is able to search document using additional keyword", "Optional[Test Alpha Sense API end point...)</span>
-                <span class="method-start">498 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("User is able to get correct number of results in the document", "Optional[Test Alpha Sense API end ...)</span>
-                <span class="method-start">2621 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("User gets required number of objects for each response", "Optional[Test Alpha Sense API end points]...)</span>
-                <span class="method-start">3220 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runScenario("User is able to search document using additional keyword", "Optional[Test Alpha Sense API end point...)</span>
-                <span class="method-start">3369 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <span class="method-name">runScenario("Search Keyword and verify highlighted statement in last answer", "Optional[Test Alpha Sense Search ...)</span>
-                <span class="method-start">3504 ms</span>
+                <span class="method-start">265 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">11864 ms</span>
+                <span class="method-start">7514 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

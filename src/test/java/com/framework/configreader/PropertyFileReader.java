@@ -34,29 +34,14 @@ public class PropertyFileReader implements IconfigReader {
 		return prop.getProperty("browser");
 	}
 	
-	public String getExecutionEnv() {
-		return prop.getProperty("ExecutionEnv");
-	}
 	
 	public String getRemoteExecutionEnvURL() {
 		return prop.getProperty("RemoteExecutionEnvURL");
 	}
-	
-	public String getReportOverwrite() {
-		return prop.getProperty("ReportOverWrite");
-	}
+
 
 	public int getPageLoadTimeOut() {
 		return Integer.parseInt(prop.getProperty("PageLoadTimeOut"));
-	}
-	
-	public String getWaitTime() {
-		String time = prop.getProperty("wait.explicit.seconds");
-		if (time != null)
-			return time;
-		else
-			throw new RuntimeException("Time  is  not specified in the Configuration.properties file.");
-	
 	}
 
 	public int getImplicitWait() {
@@ -66,17 +51,7 @@ public class PropertyFileReader implements IconfigReader {
 	public int getExplicitWait() {
 		return Integer.parseInt(prop.getProperty("ExplicitWait"));
 	}
-	
-	public int getWaitForAnswer() {
-		return Integer.parseInt(prop.getProperty("WaitForAnswer"));
-	}
-	
-	
-	
-	public static String getDownloadsFolder() {
-		return prop.getProperty("DownloadsFolder");
-	}
-	
+
 	
 	
 
